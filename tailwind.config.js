@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'react': "url('./src/assets/react.svg')",
+        'react': "url('/reactt.svg')",
         // 'footer-texture': "url('/img/footer-texture.png')",
       }
     },
