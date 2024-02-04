@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'react': "url('/reactt.svg')",
-        // 'footer-texture': "url('/img/footer-texture.png')",
+        "close-menu": "url('/assets/icons/closeMenuHamburguer.svg')",
+        "open-menu": "url('/assets/icons/close-menu.svg')",
       }
     },
   },
