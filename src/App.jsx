@@ -1,9 +1,9 @@
-import { NavBarComponent } from "./components/NavBarComponent/NavBarComponent"
+import { Home } from "./pages/Home/Home"
 
 export const App = () => {
   return (
     <>
-    <NavBarComponent/>
+      <Home />
     </>
   )
 }
