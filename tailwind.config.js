@@ -9,7 +9,12 @@ export default {
       backgroundImage: {
         "close-menu": "url('/assets/icons/closeMenuHamburguer.svg')",
         "open-menu": "url('/assets/icons/close-menu.svg')",
-      }
+      },
+      fontFamily: {
+        'mainFont': ["Poppins", 'sans-serif'],
+        'logoFont': ["Sixtyfour", 'sans-serif'],
+        'techTitle': ["Protest Riot", 'sans-serif'],
+      },
     },
   },
   plugins: [],
