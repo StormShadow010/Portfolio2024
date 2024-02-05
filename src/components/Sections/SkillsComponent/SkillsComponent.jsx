@@ -76,7 +76,7 @@ export const SkillsComponent = () => {
                     {/* Backend Skills */}
                     < div className="w-6 h-6 bg-blue-500" >
 
-                        <div className="w-[250px] h-[250px] [&>svg]:fill-[#fff] [&_#grandchild2]:fill-green-800">
+                        <div className="w-[250px] h-[250px] [&>svg]:fill-[#fff] [&_#grandchild2]:hover:fill-green-800">
                             <div className="">
                                 <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 28L4 3H28L26 28L16 31L6 28Z"></path>
