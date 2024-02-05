@@ -49,7 +49,6 @@ export const SkillsComponent = () => {
     ];
 
     // console.log(typeof ("#000"))
-
     return (
         <div className="relative h-screen w-full m-auto bg-skills-one bg-cover bg-center">
             <div className="text-5xl font-extrabold text-center">
