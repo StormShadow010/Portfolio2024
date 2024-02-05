@@ -31,13 +31,9 @@ export const SkillsComponent = () => {
                 fill: fillColor
             });
         });
-
-        console.log(pathHoverTotal);
-        return (
-            <div className={`w-[70px] h-[70px]  ${pathHoverTotal}`}>
-                <svg viewBox="0 0 128 128" className=''>{clonedPaths}</svg>
-            </div>
-        )
+        // return <svg viewBox="0 0 128 128">{clonedPaths}</svg>
+        const svg = <svg viewBox="0 0 128 128">{clonedPaths}</svg>
+        return { svg, pathHoverTotal };
     }
 
     //Data Icons
@@ -45,9 +41,11 @@ export const SkillsComponent = () => {
         {
             name: 'CSS3',
             icon: CSS3Icon(),
+            // className: '[&_#path-1]:hover:fill-[#1572B6] [&_#path-2]:hover:fill-[#33A9DC] [&_#path-3]:hover:fill-[#fff] [&_#path-4]:hover:fill-[#EBEBEB] [&_#path-5]:hover:fill-[#fff] [&_#path-6]:hover:fill-[#EBEBEB]',
         },
     ];
 
+    console.log(CSS3Icon())
     // console.log(typeof ("#000"))
     return (
         <div className="relative h-screen w-full m-auto bg-skills-one bg-cover bg-center">
@@ -64,10 +62,12 @@ export const SkillsComponent = () => {
                         <h1 className="text-white font-techTitle font-bold text-[20px]">Frontend</h1>
                     </div>
                     <div>
+
                         {Icons.map((icon, index) => {
+                            console.log(icon, index)
                             return (
-                                <div key={index} className={``}>
-                                    {icon.icon}
+                                <div key={index} className={`w-[70px] h-[70px] ${icon.icon.pathHoverTotal}`}>
+                                    {icon.icon.svg}
                                 </div>
                             )
                         })
