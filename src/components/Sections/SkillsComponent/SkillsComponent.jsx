@@ -36,12 +36,43 @@ export const SkillsComponent = () => {
         return { svg, pathHoverTotal };
     }
 
+    const HTML5Icon = () => {
+        let pathHoverTotal = ""
+        const paths = (
+            <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
+                <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
+                <path data-focus={true} d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path>
+            </svg>
+        );
+
+        const clonedPaths = React.Children.map(paths.props.children, (path, index) => {
+            const originalFill = path.props.fill;
+            const id = `path-${index + 1}`;
+            const pathHover = `[&_#${id}]:hover:fill-[${originalFill}] `;
+            pathHoverTotal += pathHover;
+            // pathTotalHover += pathHover
+            // console.log(pathHover);
+            const fillColor = path.props['data-focus'] ? '#20264d' : 'white';
+            return React.cloneElement(path, {
+                id,
+                fill: fillColor
+            });
+        });
+        // return <svg viewBox="0 0 128 128">{clonedPaths}</svg>
+        const svg = <svg viewBox="0 0 128 128">{clonedPaths}</svg>
+        return { svg, pathHoverTotal };
+    }
+
     //Data Icons
     const Icons = [
         {
             name: 'CSS3',
             icon: CSS3Icon(),
-            // className: '[&_#path-1]:hover:fill-[#1572B6] [&_#path-2]:hover:fill-[#33A9DC] [&_#path-3]:hover:fill-[#fff] [&_#path-4]:hover:fill-[#EBEBEB] [&_#path-5]:hover:fill-[#fff] [&_#path-6]:hover:fill-[#EBEBEB]',
+        },
+        {
+            name: 'HTML5',
+            icon: HTML5Icon(),
         },
     ];
 
