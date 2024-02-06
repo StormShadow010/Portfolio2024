@@ -23,7 +23,7 @@ export const AboutComponent = () => {
     };
 
     return (
-        <div className='relative h-screen w-[100%] m-auto bg-about-section bg-left-bottom pt-[4.5rem]  md:pt-[8rem] md:bg-top '>
+        <div className='relative h-screen w-[100%] m-auto bg-about-section bg-left-bottom pt-[5rem]  md:pt-[8rem] md:bg-top '>
             <div className="grid gap-4 items-center justify-items-center p-6 md:grid-cols-2 ">
                 <div>
                     <Tilt className="relative w-[200px] h-[200px] bg-me bg-cover bg-center shadow-2xl rounded-[90%] md:w-[260px] md:h-[260px] " options={options} zIndex={0} />
