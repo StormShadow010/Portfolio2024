@@ -82,7 +82,7 @@ export const SkillsComponent = () => {
                     <div className='flex'>
                         {Icons.map((icon, index) => {
                             return (
-                                <div key={index} className={`w-[70px] h-[70px] bg-cover bg-center hover:scale-[500px]`}>
+                                <div key={index} className={`w-[70px] h-[70px] bg-cover bg-center hover:scale-[2]`}>
                                     <div onMouseOver={() => handleHover(index)} onMouseLeave={handleLeave}>
                                         <icon.icon key={index} onHover={hoveredIcon === index} />
                                     </div>
