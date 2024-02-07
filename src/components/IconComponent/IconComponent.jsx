@@ -13,7 +13,6 @@ export const IconComponent = ({ icons }) => {
     const IndividualIcon = ({ icon, index, onHover }) => {
         const paths = icon.icon()
         const clonedPaths = React.Children.map(paths.props.children, (path) => {
-            console.log(path.props)
             return <path {...path.props} fill={onHover ? path.props.fill : (path.props['data-focus'] ? '#20264d' : 'white')} />;
         })
 
