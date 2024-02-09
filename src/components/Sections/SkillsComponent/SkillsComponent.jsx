@@ -194,8 +194,8 @@ const iconsVersionControl = [
 
 export const SkillsComponent = () => {
     return (
-        <div className="relative min-h-screen w-full m-auto bg-skills-one bg-cover bg-center">
-            <div className="text-5xl font-extrabold text-center">
+        <div className="relative min-h-screen w-full m-auto bg-skills-one bg-cover bg-center md:h-screen md:flex md:justify-center md:items-center md:flex-col">
+            <div className="text-5xl font-extrabold text-center md:mb-[50px]">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                     Skills
                 </span>
