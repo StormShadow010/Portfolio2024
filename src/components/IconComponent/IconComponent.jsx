@@ -35,7 +35,7 @@ export const IconComponent = ({ icons }) => {
     };
 
     return (
-        <div className='flex flex-wrap justify-center items-center gap-8 mt-2 md:h-[280px]'>
+        <div className='flex flex-wrap justify-center items-center gap-8 mt-2'>
             {
                 icons.map((icon, index) => {
                     return <IndividualIcon key={index} icon={icon} index={index} onHover={hoveredIcon === index} />

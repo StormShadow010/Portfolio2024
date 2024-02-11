@@ -11,4 +11,11 @@
     @apply filter grayscale invert;
   }
 
+  .wrapperCard {
+    border-radius: 17px;
+    background: linear-gradient(145deg, #112a61, #0e2352);
+    box-shadow: 5px 5px 0px #0a1939,
+      -5px -5px 0px #16357d;
+  }
+
 }

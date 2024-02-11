@@ -194,7 +194,7 @@ const iconsVersionControl = [
 
 export const SkillsComponent = () => {
     return (
-        <div className="relative min-h-screen w-full m-auto bg-skills-one bg-cover bg-center md:h-screen md:flex md:justify-center md:items-center md:flex-col">
+        <div className="relative h-max w-full m-auto bg-skills-one bg-cover bg-center md:h-screen md:flex md:justify-center md:items-center md:flex-col">
             <div className="text-5xl font-extrabold text-center md:mb-[50px]">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                     Skills
@@ -202,32 +202,32 @@ export const SkillsComponent = () => {
             </div>
             <div className="w-full inset-y-0 py-[1rem] md:flex md:gap-4 md:p-4">
                 {/* Frontend Skills */}
-                <div className="w-[95%] mx-auto h-max bg-[#0F99D9] my-[4rem]  py-[30px] px-[15px] text-black flex flex-col shadow-shadowCardSkills rounded-[15px] md:h-[450px]">
+                <div className="w-[95%] mx-auto h-max bg-[#0F99D9] my-[4rem]  py-[30px] px-[15px] text-black flex flex-col shadow-shadowCardSkills rounded-[15px] md:h-[550px] lg:h-[450px]">
                     <div className="relative flex justify-center">
                         <img className="absolute -translate-y-full w-[100px] h-[100px]" src={fronIcon} alt="frontend" />
                         <h1 className="text-white font-techTitle font-bold text-[20px]">Frontend</h1>
                     </div>
-                    <div className="h-max py-[1rem]">
+                    <div className="h-full py-[1rem] flex justify-center items-center">
                         <IconComponent icons={iconsFrontend} />
                     </div>
                 </div>
                 {/* Backend Skills */}
-                <div className="w-[95%] mx-auto h-max bg-[#0F99D9] my-[4.5rem] py-[30px] px-[15px] text-black flex flex-col shadow-shadowCardSkills rounded-[15px] md:h-[450px] md:my-[4rem]">
+                <div className="w-[95%] mx-auto h-max bg-[#0F99D9] my-[4.5rem] py-[30px] px-[15px] text-black flex flex-col shadow-shadowCardSkills rounded-[15px] md:h-[550px] md:my-[4rem] lg:h-[450px]">
                     <div className="relative flex justify-center">
                         <img className="absolute -translate-y-full w-[100px] h-[100px]" src={backendIcon} alt="frontend" />
                         <h1 className="text-white font-techTitle font-bold text-[20px]">Backend</h1>
                     </div>
-                    <div className="h-max py-[1rem]">
+                    <div className="h-full py-[rem] flex justify-center items-center ">
                         <IconComponent icons={iconsBackend} />
                     </div>
                 </div>
                 {/* Control Versión Skills */}
-                <div className="w-[95%] mx-auto h-max bg-[#0F99D9] my-[5rem] py-[30px] px-[15px] text-black flex flex-col shadow-shadowCardSkills rounded-[15px] md:h-[450px] md:my-[4rem]">
+                <div className="w-[95%] mx-auto h-max bg-[#0F99D9] my-[5rem] py-[30px] px-[15px] text-black flex flex-col shadow-shadowCardSkills rounded-[15px] md:h-[550px] md:my-[4rem] lg:h-[450px]">
                     <div className="relative flex justify-center">
                         <img className="absolute -translate-y-full w-[100px] h-[100px]" src={controlVersion} alt="frontend" />
                         <h1 className="text-white font-techTitle font-bold text-[20px]">Version control</h1>
                     </div>
-                    <div className="h-max py-[1rem]">
+                    <div className="h-full py-[1rem] flex justify-center items-center">
                         <IconComponent icons={iconsVersionControl} />
                     </div>
                 </div>
