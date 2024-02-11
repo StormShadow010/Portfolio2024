@@ -18,4 +18,28 @@
       -5px -5px 0px #16357d;
   }
 
+
+
+
+
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background: #000000;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fd0000;
 }

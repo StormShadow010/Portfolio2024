@@ -1,15 +1,19 @@
 import { NavBarComponent } from "../../components/NavBarComponent/NavBarComponent"
-import { AboutComponent } from "../../components/Sections/AboutComponent/AboutComponent"
-import { PortolioComponent } from "../../components/Sections/PortolioComponent/PortolioComponent"
-import { SkillsComponent } from "../../components/Sections/SkillsComponent/SkillsComponent"
+import { AboutPage } from "../About/AboutPage"
+import { SkillsPage } from "../Skills/SkillsPage"
+import { PortfolioPage } from "../Portfolio/PortfolioPage"
+import { TutorialsPage } from "../Tutorials/TutorialsPage"
+import { CertificatesPage } from "../Certificates/CertificatesPage"
 
 export const Home = () => {
     return (
-        <div className="relative inset-0">
+        <div id="home" className="relative inset-0">
             <NavBarComponent />
-            <AboutComponent />
-            <SkillsComponent />
-            <PortolioComponent />
+            <AboutPage />
+            <SkillsPage />
+            <PortfolioPage />
+            <TutorialsPage />
+            <CertificatesPage />
         </div>
     )
 }

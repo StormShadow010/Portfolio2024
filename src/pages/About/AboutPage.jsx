@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import VanillaTilt from 'vanilla-tilt';
-import pdf from '/assets/files/HV_Andrés Santiago Jiménez Guzmán_Web_Developer.pdf';
+import pdf from '../../assets/files/HV_Andrés Santiago Jiménez Guzmán_Frontend_Developer.pdf';
 
 function Tilt(props) {
     // eslint-disable-next-line react/prop-types
@@ -14,8 +14,8 @@ function Tilt(props) {
     return <div ref={tilt} style={{ zIndex: zIndex }} {...rest} />;
 }
 
-export const AboutComponent = () => {
 
+export const AboutPage = () => {
     const options = {
         scale: 1.2,
         speed: 1000,
@@ -23,7 +23,7 @@ export const AboutComponent = () => {
     };
 
     return (
-        <div className='relative h-max w-[100%] m-auto bg-about-section bg-top pt-[5rem]  md:pt-[8rem] md:bg-left '>
+        <div id='about' className='relative h-max w-[100%] m-auto bg-about-section bg-top pt-[5rem]  md:pt-[8rem] md:bg-left '>
             <div className="grid gap-4 items-center justify-items-center p-6 md:grid-cols-2 ">
                 <div className=''>
                     <Tilt className="border-4 relative w-[200px] h-[200px] bg-me bg-cover bg-center shadow-2xl rounded-[90%] md:w-[260px] md:h-[260px] " options={options} zIndex={0} />

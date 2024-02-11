@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react"
-import { CardProjectComponent } from "../../CardProjectComponent/CardProjectComponent"
+import { NavLink } from "react-router-dom"
+import { CardProjectComponent } from "../../components/CardProjectComponent/CardProjectComponent"
 
 const data = [
     {
@@ -30,12 +31,10 @@ const data = [
         stack: ['React Native', 'CSS', 'Mongo DB', 'Adobe Illustrator'],
         description: "Project where an application is generated for teaching the Python language where a dynamic interaction with the user is sought, allowing learning at their own pace.",
         repoLink: "https://github.com/StormShadow010/AmbienteMaestria-ReactNative"
-
     }
 ]
 
-export const PortolioComponent = () => {
-
+export const PortfolioPage = () => {
     const [infoShow, setInfoShow] = useState(data[0])
 
     const handleInfo = (e) => {
@@ -45,25 +44,35 @@ export const PortolioComponent = () => {
 
     const ButtonProject = ({ idProject }) => {
         return (
-            <button id={idProject} className="w-[50px] h-full bg-[#AE445A] rounded-sm text-white font-bold flex justify-center items-center m-1" onClick={handleInfo}>{idProject + 1}</button>
+            <button id={idProject} className="w-[50px] h-full bg-[#AE445A] rounded-sm text-white font-bold flex justify-center items-center" onClick={handleInfo}>{idProject + 1}</button>
         )
     }
 
     return (
-        <div className="flex flex-col bg-projectIn bg-cover bg-center h-max w-full">
-            <div className="text-5xl font-extrabold text-center md:mb-[10px]">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+        <div id="portfolio" className="flex flex-col bg-projectIn bg-cover bg-center h-max w-full">
+            <div className="text-center md:mb-[10px]">
+                <span className="text-5xl font-extrabold   bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                     Portofolio
                 </span>
+
+                <NavLink target="_blank" to="https://github.com/StormShadow010">
+                    <div className="w-[50%] h-max mx-auto mt-2 flex items-center justify-evenly bg-[#E7AB79] rounded-3xl md:max-w-[200px]">
+                        <span className="text-white font-mainFont font-semibold text-[15px]">Personal Github</span>
+                        <img src={"assets/icons/enlace.png"} className="w-[50px] h-[50px]" alt="" />
+
+                    </div></NavLink>
+                <p className="text-white font-mainFont font-semibold text-[15px] mt-2">Click on the number to see the project</p>
+
             </div>
             <div className="w-[90%] mx-auto pt-2 md:w-[30%] md:pt-0">
-                <div className="flex flex-wrap justify-center items-center gap-3 bg-[#F39F5A] p-1  rounded-xl">
+                <div className="flex flex-wrap justify-center items-center gap-3 bg-[#F39F5A] p-2  rounded-xl">
                     {
                         data.map((project, index) => {
                             return <ButtonProject key={index} idProject={index} />
                         })
                     }
                 </div>
+
             </div>
             <div>
                 <div className="w-[100%] h-max p-[1.5rem]">
@@ -72,6 +81,6 @@ export const PortolioComponent = () => {
                     )}
                 </div>
             </div >
-        </div>
+        </div >
     )
 }

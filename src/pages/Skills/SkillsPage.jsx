@@ -1,7 +1,7 @@
 import fronIcon from "/assets/icons/front-end.png"
 import backendIcon from "/assets/icons/backend.png"
 import controlVersion from "/assets/icons/controldeversiones.png"
-import { IconComponent } from '../../IconComponent/IconComponent'
+import { IconComponent } from '../../components/IconComponent/IconComponent'
 
 
 const iconsFrontend = [
@@ -191,10 +191,9 @@ const iconsVersionControl = [
 ]
 
 
-
-export const SkillsComponent = () => {
+export const SkillsPage = () => {
     return (
-        <div className="relative h-max w-full m-auto bg-skills-one bg-cover bg-center md:h-screen md:flex md:justify-center md:items-center md:flex-col">
+        <div id="skills" className="relative h-max w-full m-auto bg-skills-one bg-cover bg-center md:h-screen md:flex md:justify-center md:items-center md:flex-col">
             <div className="text-5xl font-extrabold text-center md:mb-[50px]">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
                     Skills
