@@ -58,7 +58,7 @@ export const CertificatesPage = () => {
     };
 
     return (
-        <div id='certificates' className='w-[100%] bg-[#363062] pb-3 '>
+        <div id='certificates' className='w-[100%] bg-[#363062] pb-8 '>
 
             <div className="text-5xl font-extrabold text-center md:mb-[10px]">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">

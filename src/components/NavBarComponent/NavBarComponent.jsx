@@ -33,6 +33,11 @@ const dataLinks = [
         link: false,
         path: "certificates",
     },
+    {
+        label: "Contact me",
+        link: false,
+        path: "contact",
+    },
 ];
 
 

@@ -13,6 +13,7 @@ export default {
         "about-section": "url('/assets/sections/AboutMe.jpg')",
         "skills-one": "url('/assets/sections/skills1.jpg')",
         "projectIn": "url('/assets/sections/projectIn.jpg')",
+        "contactme": "url('/assets/sections/contact.jpg')",
       },
       fontFamily: {
         'mainFont': ["Poppins", 'sans-serif'],

@@ -4,6 +4,7 @@ import { SkillsPage } from "../Skills/SkillsPage"
 import { PortfolioPage } from "../Portfolio/PortfolioPage"
 import { TutorialsPage } from "../Tutorials/TutorialsPage"
 import { CertificatesPage } from "../Certificates/CertificatesPage"
+import { ContactMePage } from "../ContactMe/ContactMePage"
 
 export const Home = () => {
     return (
@@ -14,6 +15,7 @@ export const Home = () => {
             <PortfolioPage />
             <TutorialsPage />
             <CertificatesPage />
+            <ContactMePage />
         </div>
     )
 }
