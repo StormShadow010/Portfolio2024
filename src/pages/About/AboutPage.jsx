@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import VanillaTilt from 'vanilla-tilt';
-import pdf from '../../assets/files/HV_Andrés Santiago Jiménez Guzmán_Frontend_Developer.pdf';
+import pdf from '../../assets/files/HV_Andrés Santiago Jiménez Guzmán.pdf';
 
 function Tilt(props) {
     // eslint-disable-next-line react/prop-types
