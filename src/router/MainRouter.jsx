@@ -16,6 +16,7 @@ export const MainRouter = () => {
                 <Route path='/portfolio' element={<PortfolioPage />} />
                 <Route path='/tutorials' element={<TutorialsPage />} />
                 <Route path='/certificates' element={<CertificatesPage />} />
+                <Route path="/*" element={<Home />} />
             </Routes>
         </BrowserRouter>
     )

@@ -5,6 +5,13 @@ import { CardProjectComponent } from "../../components/CardProjectComponent/Card
 
 const data = [
     {
+        imageProject: "assets/projects/project5.png",
+        title: "Heroes spa",
+        stack: ['React JS', 'Boostrap', "Query-string"],
+        description: "The project that was carried out consisted of public and protected routes with a react router for a visualization of DC and Marvel characters, in addition to being able to see each one by category and do a respective search.",
+        repoLink: "https://github.com/StormShadow010/heroes-spa"
+    },
+    {
         imageProject: "assets/projects/project1.png",
         title: "Video Game e-commerce ",
         stack: ['React JS', 'SASS', 'Firebase'],
@@ -31,7 +38,8 @@ const data = [
         stack: ['React Native', 'CSS', 'Mongo DB', 'Adobe Illustrator'],
         description: "Project where an application is generated for teaching the Python language where a dynamic interaction with the user is sought, allowing learning at their own pace.",
         repoLink: "https://github.com/StormShadow010/AmbienteMaestria-ReactNative"
-    }
+    },
+
 ]
 
 export const PortfolioPage = () => {
